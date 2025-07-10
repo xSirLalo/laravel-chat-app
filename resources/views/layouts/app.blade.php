@@ -16,6 +16,9 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+    <!-- Livewire Styles -->
+    @livewireStyles
+
     @stack('styles')
 </head>
 <body>
@@ -28,5 +31,8 @@
     </div>
 
     @stack('scripts')
+
+    <!-- Livewire Scripts -->
+    @livewireScripts
 </body>
 </html>
