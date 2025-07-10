@@ -10,6 +10,13 @@ window.bootstrap = bootstrap;
 import axios from 'axios';
 window.axios = axios;
 
+import $ from 'jquery';
+window.$ = window.jQuery = $;
+
+$(document).ready(function () {
+    console.log('jQuery is loaded and ready on this page!');
+});
+
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /**

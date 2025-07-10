@@ -1,12 +1,11 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 // Variables
 @import 'variables';
-
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
-
+// Boostrap Icons
+@import '~bootstrap-icons/font/bootstrap-icons.css';
 
 .fade-out {
     animation: fadeOut 2s linear;
@@ -15,9 +14,18 @@
 
 @keyframes fadeOut {
     0% {
-        opacity:1;
+        opacity: 1;
     }
+
     100% {
-        opacity:0;
+        opacity: 0;
     }
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+pre.sf-dump .sf-dump-compact {
+    display: block !important;
 }
