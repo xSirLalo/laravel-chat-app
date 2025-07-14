@@ -1,4 +1,5 @@
 import laravel from 'laravel-vite-plugin';
+import Inspect from 'vite-plugin-inspect';
 import path from 'path';
 import { defineConfig } from 'vite';
 
@@ -10,7 +11,8 @@ export default defineConfig({
                 'resources/js/app.js',
             ],
             refresh: true,
-        })
+        }),
+        Inspect(),
     ],
     resolve: {
         alias: {

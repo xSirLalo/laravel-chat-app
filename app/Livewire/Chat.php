@@ -45,7 +45,8 @@ class Chat extends Component
 
     public function sendMessage()
     {
-        if (!$this->newMessage) return;
+        if (!$this->newMessage)
+            return;
 
         $message = ChatMessage::create([
             'sender_id' => Auth::id(),
